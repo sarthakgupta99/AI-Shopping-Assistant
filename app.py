@@ -5,6 +5,11 @@ import uuid
 import streamlit as st
 
 from shopping_agent import agent, is_shopping_related, get_active_preferences_summary
+from setup_db import DB_PATH, create_database
+
+# Auto-initialize database on Streamlit Community Cloud if store.db doesn't exist
+if not os.path.exists(DB_PATH):
+    create_database()
 
 # Initialize session_id for isolating user data per session
 if "session_id" not in st.session_state:
