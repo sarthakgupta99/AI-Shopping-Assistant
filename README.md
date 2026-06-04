@@ -1,5 +1,7 @@
 # Session-Isolated AI Shopping Assistant
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-shopping-assistant-sv7erzc5wrcp7v853dqksw.streamlit.app/)
+
 An advanced, multi-modal AI Shopping Assistant built with LangChain, Streamlit, and SQLite. The assistant acts as an agentic shopper that can search products, lookup ratings and reviews, isolate order histories and user preferences per browser tab session, perform image-based product recognition, and apply semantic input guardrails.
 
 ---
