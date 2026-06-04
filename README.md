@@ -84,3 +84,24 @@ Open the provided local URL (typically `http://localhost:8501`) in your browser 
 * **Preferences**: *"Remember that I only buy organic products"* or *"Forget my budget preference"*
 * **Checkout**: *"Order product ID 1"* or *"Get me #3"*
 * **History**: *"What have I ordered before?"*
+
+---
+
+## Deployment to Streamlit Community Cloud
+
+To deploy this application to **Streamlit Community Cloud** (free hosting):
+
+1. **GitHub Setup**: Ensure you have pushed the repository to GitHub (we have pushed it to [sarthakgupta99/AI-Shopping-Assistant](https://github.com/sarthakgupta99/AI-Shopping-Assistant)).
+2. **Deploy on Streamlit**:
+   * Navigate to [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
+   * Click **New app** (or **Create app**).
+   * Select your repository `sarthakgupta99/AI-Shopping-Assistant`, branch `main`, and main file path `app.py`.
+3. **Configure Environment Variables**:
+   * Under the deploy options, click on **Advanced settings**.
+   * In the **Secrets** section, configure your Groq API Key using TOML format:
+     ```toml
+     GROQ_API_KEY = "gsk_..."
+     ```
+   * Click **Save**.
+4. **Launch**: Click **Deploy**. Streamlit will install the dependencies from `requirements.txt` and automatically initialize the database on startup!
+
